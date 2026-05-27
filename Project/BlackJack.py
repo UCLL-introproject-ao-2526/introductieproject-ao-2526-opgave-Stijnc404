@@ -16,10 +16,14 @@ fps = 60
 timer = pygame.time.Clock()
 font = pygame.font.Font('freesansbold.ttf', 44)
 active = True
+#win, loss, draw/push
+record = [0, 0, 0]
+player_score = 0
+dealer_score = 0
 
 
 # draw game conditions and buttons
-def draw_game(act):
+def draw_game(act, record):
     button_list = []
     #initially on startup (not active) only option is to deal new hand
     if not act:
@@ -28,7 +32,7 @@ def draw_game(act):
         deal_text = font.render('DEAL HAND', True, 'black')
         screen.blit(deal_text, (165, 50))
         button_list.append(deal)
-    # once game started, shot hit and stand button
+    # once game started, show hit and stand button
     else:
         hit = pygame.draw.rect(screen, 'white',[0, 700, 300, 100], 0, 5)
         pygame.draw.rect(screen, 'green',[0, 700, 300, 100], 3, 5)
@@ -40,7 +44,11 @@ def draw_game(act):
         pygame.draw.rect(screen, 'green',[300, 700, 300, 100], 3, 5)
         stand_text = font.render('STAND', True, 'black')
         screen.blit(stand_text, (355, 735))
-        button_list.append(hit)
+        button_list.append(stand)
+
+        score_text = font.render(f'Wins: {record[0]}      Losses: {record[1]}   Draws: {record[2]}', True, 'white')
+        screen.blit(score_text, (15, 840))
+    return button_list
 
 
 #main game loop
@@ -49,7 +57,7 @@ while run:
     # run game at our framerate and fill screen with bg color
     timer.tick(fps)
     screen.fill('black')
-    buttons = draw_game(active)
+    buttons = draw_game(active, record)
 
     # event handling if quit pressed, then exit game
     for event in pygame.event.get():
