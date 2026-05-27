@@ -1,9 +1,5 @@
-## 27/05/2026 gestart
+## 27/05/2026
 
-- 8:12 — Begonnen met de tutorial om een blackjackspel te maken.
-- Het gaat redelijk vlot.
-- Ik heb eerder al geleerd hoe ik een Snake-game en Pac-Man kan maken.
+-Vandaag ben ik begonnen aan de tutorial om een blackjackspel te maken in Pygame.Ik heb eerder al een Snake-game en een Pac-Man-project heb gemaakt, voelde ---de basis van Pygame redelijk vertrouwd aan. Daardoor ging de start vlotjes.
 
-- 9:15 — Eerste fout ontdekt:
-  - Ik was vergeten de positie van de tekst STAND te verplaatsen.
-  - Daardoor had deze dezelfde coördinaten als de tekst van HIT ME.
+-Tijdens het maken van de knoppen liep ik tegen mijn eerste fout aan. De tekst van de knop “STAND” verscheen bovenop “HIT ME”. Mijn eerste gedachte was dat er iets mis was met coordinaten en dat was ook zo ik had de coordinaten gecopyd van "HIT ME" en vergeten aan te passen.
