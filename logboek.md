@@ -1,4 +1,4 @@
-## 27/05/2026
+## 27/05/2026 startdatum
 
 -Vandaag ben ik begonnen aan de tutorial om een blackjackspel te maken in Pygame.Ik heb eerder al een Snake-game en een Pac-Man-project heb gemaakt, voelde ---de basis van Pygame redelijk vertrouwd aan. Daardoor ging de start vlotjes.
 
