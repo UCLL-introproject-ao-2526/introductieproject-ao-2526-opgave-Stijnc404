@@ -15,6 +15,7 @@ pygame.display.set_caption('Pygame Blackjack')
 fps = 60
 timer = pygame.time.Clock()
 font = pygame.font.Font('freesansbold.ttf', 44)
+smaller_font = pygame.font.Font('freesansbold.ttf', 36)
 active = True
 #win, loss, draw/push
 record = [0, 0, 0]
@@ -46,7 +47,7 @@ def draw_game(act, record):
         screen.blit(stand_text, (355, 735))
         button_list.append(stand)
 
-        score_text = font.render(f'Wins: {record[0]}      Losses: {record[1]}   Draws: {record[2]}', True, 'white')
+        score_text = smaller_font.render(f'Wins: {record[0]}      Losses: {record[1]}   Draws: {record[2]}', True, 'white')
         screen.blit(score_text, (15, 840))
     return button_list
 
