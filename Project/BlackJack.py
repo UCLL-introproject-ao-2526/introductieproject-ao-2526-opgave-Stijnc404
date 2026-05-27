@@ -22,7 +22,7 @@ player_score = 0
 dealer_score = 0
 initial_deal = False
 my_hand = []
-dealer_score = []
+dealer_hand = []
 outcome = 0
 
 # deal cards by selecting randomly from deck, and make function for one card at a time
@@ -74,6 +74,7 @@ while run:
         for i in range(2):
             my_hand, game_deck = deal_cards(my_hand, game_deck)
             dealer_hand, game_deck = deal_cards(dealer_hand, game_deck)
+        print(my_hand, dealer_hand)
         initial_deal = False
     buttons = draw_game(active, record)
 
