@@ -25,6 +25,14 @@ my_hand = []
 dealer_score = []
 outcome = 0
 
+# deal cards by selecting randomly from deck, and make function for one card at a time
+def deal_cards(current_hand, currennt_deck):
+    card = random.randint(0, len(currennt_deck))
+    current_hand.append(currennt_deck[card-1])
+    currennt_deck.pop(card-1)
+    print(current_hand, currennt_deck)
+    return current_hand, currennt_deck
+
 # draw game conditions and buttons
 def draw_game(act, record):
     button_list = []
@@ -60,6 +68,13 @@ while run:
     # run game at our framerate and fill screen with bg color
     timer.tick(fps)
     screen.fill('black')
+    # initial deal to player and dealer 
+    # once game is activated, and dealth, calculate scores and display cards
+    if initial_deal:
+        for i in range(2):
+            my_hand, game_deck = deal_cards(my_hand, game_deck)
+            dealer_hand, game_deck = deal_cards(dealer_hand, game_deck)
+        initial_deal = False
     buttons = draw_game(active, record)
 
     # event handling if quit pressed, then exit game
