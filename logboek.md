@@ -24,3 +24,12 @@ Toen ik dat aangepast had werkte de scoreberekening meteen correct. ik heb mij b
 Ik heb ook een paar andere bugs gehad waarbij functies niet de juiste argumenten kregen of waarbij variabelen door elkaar gebruikt werden. In plaats van direct random dingen te veranderen ben ik deze keer meer beginnen kijken naar de foutmeldingen in de terminal. Dat hielp veel meer dan ik verwacht had. Vaak stond de oplossing eigenlijk bijna letterlijk in de error message, maar in het begin negeerde ik die te veel.
 
 Wat ik in de toekomst anders wil doen is vaker kleine stukken code testen in plaats van heel veel tegelijk toe te voegen. Vandaag merkte ik dat bugs veel makkelijker te vinden zijn wanneer ik na elke kleine aanpassing het programma opnieuw run. Ook wil ik beter opletten wanneer een tutorialmaker iets aanpast, want soms veranderde ik niet alles mee waardoor stukken code niet meer overeenkwamen.
+
+## 29/05/2026
+
+Vandaag heb ik vooral gewerkt aan het afwerken en debuggen van de blackjack game. Het grootste verschil met gisteren is dat het spel nu volledig speelbaar is zonder dat het constant crasht. Ik merkte wel dat het moeilijker werd om overzicht te houden omdat er ondertussen veel lijnen code in het project zitten.
+
+Het grootste waar ik mij vandaag aan opgejaagd heb, was een fout waarbij ik ergens per ongeluk dealer_score gebruikte in plaats van deal_score. Daardoor crashte de game telkens wanneer een ronde gewonnen of verloren was. Het was frustrerend omdat ik geen fout vond de output zij wel van die line maar ik heb er toch naar lang gezocht. Buite dat heb ik ook lang gezocht naar een bug waarbij de dealerkaarten zichtbaar bleven nadat ik op “NEW HAND” drukte. Ik dacht direct dat er iets van False of True vergeten was, maar uiteindelijk bleek dat ik vergeten was een variabele terug op False te zetten.
+
+Ik merk wel dat ik stilaan beter word maar ik merk wel dat ik beter word in het oplossen van fouten door meer op de kleine details te letten.
+Eerst lette ik meer op de tutorial maar eigelijk vond ik het sneller met gewoon de foutmelding in output te bekijken. Ik ga nog morgen speciale toevoegingen doen zelf aan de game en dan is mijn project af.
