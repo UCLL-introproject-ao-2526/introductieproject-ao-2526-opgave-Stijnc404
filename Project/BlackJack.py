@@ -146,7 +146,6 @@ def calculate_score(hand):
 # draw game conditions and buttons
 def draw_game(act, record, result):
     button_list = []
-    # groene casinoachtergrond balk bovenaan
     pygame.draw.rect(screen, (20, 100, 40), [0, 0, WIDTH, 80])
     pygame.draw.rect(screen, (10, 60, 20), [0, 0, WIDTH, 80], 3)
 
@@ -172,16 +171,12 @@ def draw_game(act, record, result):
         score_text = smaller_font.render(f'Wins: {record[0]}   Losses: {record[1]}   Draws: {record[2]}', True, 'white')
         screen.blit(score_text, (15, 840))
 
-        # countdown balk
         bar_width = int((countdown / 10) * WIDTH)
-        # kleur verandert van groen naar rood naarmate tijd verstrijkt
         r = int(255 * (1 - countdown / 10))
         g = int(255 * (countdown / 10))
         pygame.draw.rect(screen, (r, g, 0), [0, 760, bar_width, 18], 0, 4)
         pygame.draw.rect(screen, 'white', [0, 760, WIDTH, 18], 2, 4)
         screen.blit(font.render(f'{int(countdown)}s', True, 'white'), (WIDTH - 40, 758))
-
-        # max score tonen
         screen.blit(font.render(f'Target: {max_score}', True, (255, 215, 0)), (160, 712))
 
     if result != 0:
@@ -195,8 +190,6 @@ def draw_game(act, record, result):
 
 # check endgame conditions function
 def check_endgame(hand_act, dealer_score, player_score, result, totals, add):
-    # check end game scenarios if player has stood, busted or blackjacked
-    # result 1- player bust, 2-win, 3-loss, 4-push
     if not hand_act and dealer_score >= 17:
         if player_score > max_score:
             result = 1
@@ -219,12 +212,10 @@ def check_endgame(hand_act, dealer_score, player_score, result, totals, add):
 #main game loop
 run = True
 while run:
-    # run game at our framerate and fill screen with bg color
     timer.tick(fps)
     screen.fill((34, 120, 60))
 
     if initial_deal:
-        # elke nieuwe ronde random kans op 23 ipv 21
         max_score = random.choice([21, 21, 21, 23])
         for i in range(2):
             my_hand, game_deck = deal_cards(my_hand, game_deck, 'player')
@@ -251,7 +242,6 @@ while run:
                 dealer_hand, game_deck = deal_cards(dealer_hand, game_deck, 'dealer')
         draw_scores(player_score, dealer_score)
 
-        # countdown update - telt af per seconde
         if hand_active and not still_animating:
             countdown_timer += 1
             if countdown_timer >= fps:
