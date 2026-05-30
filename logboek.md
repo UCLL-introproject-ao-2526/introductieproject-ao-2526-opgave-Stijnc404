@@ -1,35 +1,15 @@
-## 27/05/2026 startdatum
+## 27/05/2026
 
-Vandaag ben ik begonnen aan de tutorial om een blackjackspel te maken in Pygame.Ik heb eerder al een Snake-game en een Pac-Man-project heb gemaakt, voelde de basis van Pygame redelijk vertrouwd aan. Daardoor ging de start vlotjes.
-
-Tijdens het maken van de knoppen liep ik tegen mijn eerste fout aan. Was even verwarrend want de tekst van de knop “STAND” verscheen bovenop “HIT ME”. Mijn eerste gedachte was dat er iets mis was met coordinaten en dat was ook zo ik had de coordinaten gecopy-paste van "HIT ME" en vergeten aan te passen.
+Vandaag ben ik gestart met het blackjackproject in Pygame. Ik volgde een tutorial en maakte de basis van het spel, waaronder de knoppen en de eerste spelstructuur. Tijdens het programmeren vond ik een fout in de positie van een knop, waardoor teksten over elkaar werden weergegeven.
 
 ## 28/05/2026
 
-Vandaag heb ik verder gewerkt aan mijn blackjack project in pygame. Vergeleken met gisteren is het project al veel uitgebreider geworden. Ik heb functies toegevoegd voor het delen van kaarten, het berekenen van scores, het tonen van de kaarten op het scherm en het tonen van de score van zowel de speler als de dealer. Ik merk dat de code ondertussen groot genoeg wordt dat ik nood heb om mijn functies toe te klappen want anders nam het me veel meer tijd om fouten te zoeken. Want die lange functies waren in het begin wat frustrerend, omdat ik gewoon een vogelnest zag.
-
-Het moeilijkste vandaag was niet echt het programmmeren, maar volgen wat de tutorial precies deed. Soms veranderde de maker van de tutorial zelf stukken code omdat hij vond dat iets niet klopte of niet nodig was. Daardoor had ik een paar momenten waar mijn game plots crashte terwijl ik dacht dat ik alles correct had overgenomen. Ik moest dus zelf beginnen nadenken over waarom iets fout liep in plaats van gewoon de tutorial letterlijk te volgen.
-
-Een fout waar ik lang op gezocht heb zat in deze lijn:
-
-if hand[i] in cards[8]['10', 'J', 'Q', 'K']
-(kreeg een syntax error in de lijn maar hij zei specifiek niet waar de fout zat wanneer ik het runde)
-
-Ik dacht eerst dat het probleem was door een dubbel punt misschien niet geplaatst te hebben of dat de kaarten verkeerd gedeeld werden. Uiteindelijk bleek dat de syntax gewoon fout was. Het moest eigenlijk zijn:
-
-if hand[i] in ['10', 'J', 'Q', 'K']
-
-Toen ik dat aangepast had werkte de scoreberekening meteen correct. ik heb mij beseft erna dat dus een klein syntax error de hele game kan doen crashen haha.
-
-Ik heb ook een paar andere bugs gehad waarbij functies niet de juiste argumenten kregen of waarbij variabelen door elkaar gebruikt werden. In plaats van direct random dingen te veranderen ben ik deze keer meer beginnen kijken naar de foutmeldingen in de terminal. Dat hielp veel meer dan ik verwacht had. Vaak stond de oplossing eigenlijk bijna letterlijk in de error message, maar in het begin negeerde ik die te veel.
-
-Wat ik in de toekomst anders wil doen is vaker kleine stukken code testen in plaats van heel veel tegelijk toe te voegen. Vandaag merkte ik dat bugs veel makkelijker te vinden zijn wanneer ik na elke kleine aanpassing het programma opnieuw run. Ook wil ik beter opletten wanneer een tutorialmaker iets aanpast, want soms veranderde ik niet alles mee waardoor stukken code niet meer overeenkwamen.
+Vandaag heb ik functies toegevoegd voor het delen van kaarten, het berekenen van scores en het weergeven van kaarten op het scherm. Ik kreeg verschillende fouten door syntaxproblemen en foutieve argumenten, maar door de foutmeldingen in de terminal te lezen kon ik deze oplossen.
 
 ## 29/05/2026
 
-Vandaag heb ik vooral gewerkt aan het afwerken en debuggen van de blackjack game. Het grootste verschil met gisteren is dat het spel nu volledig speelbaar is zonder dat het constant crasht. Ik merkte wel dat het moeilijker werd om overzicht te houden omdat er ondertussen veel lijnen code in het project zitten.
+Vandaag heb ik vooral gewerkt aan het testen en debuggen van de game uiteindelijk was de orginele game klaar. Ik loste problemen op met scores en spelrondes en merkte dat het analyseren van foutmeldingen vaak sneller werkt dan het volgen van een tutorial.
 
-Het grootste waar ik mij vandaag aan opgejaagd heb, was een fout waarbij ik ergens per ongeluk dealer_score gebruikte in plaats van deal_score. Daardoor crashte de game telkens wanneer een ronde gewonnen of verloren was. Het was frustrerend omdat ik geen fout vond de output zij wel van die line maar ik heb er toch naar lang gezocht. Buite dat heb ik ook lang gezocht naar een bug waarbij de dealerkaarten zichtbaar bleven nadat ik op “NEW HAND” drukte. Ik dacht direct dat er iets van False of True vergeten was, maar uiteindelijk bleek dat ik vergeten was een variabele terug op False te zetten.
+## 30/05/2026
 
-Ik merk wel dat ik stilaan beter word maar ik merk wel dat ik beter word in het oplossen van fouten door meer op de kleine details te letten.
-Eerst lette ik meer op de tutorial maar eigelijk vond ik het sneller met gewoon de foutmelding in output te bekijken. Ik ga nog morgen speciale toevoegingen doen zelf aan de game en dan is mijn project af.
+Vandaag heb ik het project verder afgewerkt door extra functies toe te voegen, waaronder een countdown timer en een willekeurig doel van 21 of 23 punten en animties voor de kaarten. Daarnaast verbeterde ik de vormgeving van de kaarten(kleuren,hoeken afgerond, nieuwe fonts) en knoppen en testte ik de volledige game op mogelijke fouten maar hij gaf geen errors meer.
