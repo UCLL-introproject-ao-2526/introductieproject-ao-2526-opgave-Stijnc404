@@ -1,0 +1,12 @@
+Persoonlijke reflectie
+
+Ik vond deze tutorial aangenaam om te volgen omdat de uitleg rustig gegeven werd en de programmeerstappen duidelijk werden opgebouwd.
+Wat ik vooral interessant vond, was dat de maker niet alleen de juiste oplossing toonde, maar ook liet zien hoe hij fouten opspoorde en oploste.
+Hierdoor kreeg ik een beter beeld van hoe programmeurs in de praktijk werken wanneer iets niet onmiddellijk werkt.
+Tijdens mijn eigen project heb ik gemerkt dat de technieken die hij gebruikte om bugs te vinden mij geholpen hebben bij het oplossen van fouten in mijn code.
+Toch vond ik dat sommige onderdelen uitgebreider uitgelegd mochten worden.
+Bij het ontwerpen van de gebruikersinterface werd bijvoorbeeld niet altijd duidelijk uitgelegd welke waarden de positie en grootte van knoppen bepaalden.
+Hierdoor moest ik zelf extra opzoekwerk doen om volledig te begrijpen hoe de coördinaten werkten.
+Daarnaast merkte ik tijdens het verder ontwikkelen van mijn project nog enkele bugs op die niet besproken werden in de tutorial.
+Hierdoor moest ik zelfstandig zoeken naar oplossingen want ik zat even toen ik verder zelf werkte aan de code in de knoop door die bugs.
+Ondanks deze kleine nadelen vond ik de tutorial nuttig en geschikt voor beginners omdat de uitleg rustig verloopt en de belangrijkste concepten van Pygame duidelijk aan bod komen.
