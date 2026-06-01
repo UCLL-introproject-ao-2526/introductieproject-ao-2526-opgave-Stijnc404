@@ -13,3 +13,5 @@ Vandaag heb ik vooral gewerkt aan het testen en debuggen van de game uiteindelij
 ## 30/05/2026
 
 Vandaag heb ik het project verder afgewerkt door extra functies toe te voegen, waaronder een countdown timer en een willekeurig doel van 21 of 23 punten en animties voor de kaarten. Daarnaast verbeterde ik de vormgeving van de kaarten(kleuren,hoeken afgerond, nieuwe fonts) en knoppen en testte ik de volledige game op mogelijke fouten maar hij gaf geen errors meer.
+
+ik heb elke dag van 8-11:30 en van 21:20-24:00 a 1:00u gewerkt non stop buiten mijn fulltime job en tussendoor nog aan python gewerkt of een beetje en front end maar zeker 90% van de tijd blackjack)
